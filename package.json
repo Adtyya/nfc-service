@@ -1,0 +1,28 @@
+{
+  "name": "nfc-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node nfc-agent.js",
+    "build": "pkg install.js --target node18-win-x64 --output install.exe && pkg uninstall.js --target node18-win-x64 --output uninstall.exe"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/**/*",
+      "config.json"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.20.0",
+    "nfc-pcsc": "^0.8.1",
+    "node-windows": "^1.0.0-beta.8"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}

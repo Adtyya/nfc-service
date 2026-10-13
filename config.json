@@ -1,0 +1,5 @@
+{
+  "API_BASE": "http://localhost:3000",
+  "DEVICE_NAME": "NFC-Device-01",
+  "HEARTBEAT_INTERVAL": 10000
+}
